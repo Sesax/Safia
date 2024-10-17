@@ -1,40 +1,30 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import { useLogout } from '../hooks/useLogout'
-import { useAuthContext } from "../hooks/useAuthContext";
 import { AiOutlineHome } from "react-icons/ai";
-import { Container, Box, Button, Spacer, Flex, Heading } from '@chakra-ui/react'
+import { Container, Box, Button, Spacer, Flex, Image } from '@chakra-ui/react'
 
 const Navbar = () => {
-
-    const { user } = useAuthContext()
-    const { logout } = useLogout()
-
-    const handleClick = () => {
-        logout()
-    }
     return (
         <Container maxW='100wh' paddingLeft={20} paddingTop={5} paddingBottom={3} shadow="lg">
             <Flex>
-                <Box>
-                    <Heading size='lg' paddingTop={1}>Safia</Heading>
+            <Box>
+                    {/* Remplacer le Heading par une Image */}
+                    <Image src={require('../assets/Safia_full.png')} alt="Logo Safia" width="100px" height="auto" objectFit="contain"/> {/* Ajustez le chemin et la taille */}
                 </Box>
                 <Spacer />
                 <Box>
-                    {user && (
-                        <div>
-                            <Link to='/login'>
+                            <Link to='/signaler'>
                                 <Button size='lg' colorScheme='gray' variant='ghost'>Signaler</Button>
                             </Link>
-                            <Link to='/signup'>
+                            <Link to='/defis'>
                                 <Button size='lg' colorScheme='gray' variant='ghost'>Défis</Button>
                             </Link>
-                            <Link to='/signup'>
+                            <Link to='/boutique'>
                                 <Button size='lg' colorScheme='gray' variant='ghost'>Boutique points</Button>
                             </Link>
-                            <Button onClick={handleClick} size='lg' colorScheme='gray' variant='ghost'>Déconnexion</Button>
-                        </div>
-                    )}
+                            <Link to='/login'>
+                                <Button size='lg' colorScheme='gray' variant='ghost'>Déconnexion</Button>
+                            </Link>
                 </Box>
             </Flex>
         </Container >
