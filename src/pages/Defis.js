@@ -19,21 +19,21 @@ function Defis() {
   const challenges = [
     {
       id: 1,
-      description: "Publie une photo sur Instagram avec notre produit.",
+      description: "Effectuer un signalement.",
       points: 50,
       social: "Instagram",
       icon: FaInstagram
     },
     {
       id: 2,
-      description: "Partage une publication sur Twitter à propos de notre dernière offre.",
+      description: "Partager votre poste favori de la journée.",
       points: 30,
       social: "Twitter",
       icon: FaTwitter
     },
     {
       id: 3,
-      description: "Rejoins notre groupe Facebook et commente notre dernier post.",
+      description: "Signaler un utilisateur.",
       points: 40,
       social: "Facebook",
       icon: FaFacebook

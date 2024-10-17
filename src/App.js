@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
 import Navbar from "./components/Navbar";
 
-import Home from './pages/Home'
+import Game from './pages/Game'
 import Login from './pages/Login'
 import Signaler from './pages/Signaler'
 import Boutique from './pages/Boutique'
@@ -19,6 +19,7 @@ function App() {
         <Route path='/signaler' element={<Signaler />} />
         <Route path='/boutique' element={<Boutique />} />
         <Route path='/defis' element={<Defis/>} />
+        <Route path='/game' element={<Game/>} />
       </Routes>
     </BrowserRouter>
   );

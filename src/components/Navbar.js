@@ -22,6 +22,9 @@ const Navbar = () => {
                             <Link to='/boutique'>
                                 <Button size='lg' colorScheme='gray' variant='ghost'>Boutique points</Button>
                             </Link>
+                            <Link to='/game'>
+                                <Button size='lg' colorScheme='blue' variant='ghost'>Game</Button>
+                            </Link>
                             <Link to='/login'>
                                 <Button size='lg' colorScheme='gray' variant='ghost'>Déconnexion</Button>
                             </Link>

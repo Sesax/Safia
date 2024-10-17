@@ -19,25 +19,32 @@ const Boutique = () => {
   const products = [
     {
       id: 1,
-      name: "Sneakers Retro",
+      name: "Chapeau pointu",
       price: 59,
       rating: 4.5,
       numReviews: 34
     },
     {
       id: 2,
-      name: "Montre de Luxe",
+      name: "Bannière de profile",
       price: 129,
       rating: 4.7,
       numReviews: 28
     },
     {
       id: 3,
-      name: "Sac à dos Vintage",
+      name: "Badge ancien",
       price: 79,
       rating: 4.3,
       numReviews: 18
-    }
+    },
+    {
+        id: 4,
+        name: "Nouvelles sneakers",
+        price: 100000,
+        rating: 5.0,
+        numReviews: 599
+      }
   ];
 
   return (
